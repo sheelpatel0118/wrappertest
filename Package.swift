@@ -25,6 +25,9 @@ let package = Package(
             dependencies: [
                 "ReactBridge",
 //                "DoorstepAIiOSPackage"
+            ],
+            linkerSettings: [
+                .linkedFramework("React")
             ]
         ),
         .testTarget(
